@@ -41,6 +41,10 @@ const Routes = () => {
                     }}
                 />
                 <Stack.Screen
+                    name='PlaceDetails'
+                    component={PlaceDetails}
+                />
+                 <Stack.Screen
                     name='Map'
                     component={Map}
                 />

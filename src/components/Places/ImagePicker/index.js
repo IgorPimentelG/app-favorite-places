@@ -4,7 +4,7 @@ import { styles } from './styles';
 import { launchCameraAsync, useCameraPermissions, PermissionStatus } from 'expo-image-picker';
 import OutlinedButton from '../../UI/OutlinedButton';
 
-const ImagePicker = () => {
+const ImagePicker = ({ onTakeImage }) => {
 
     const [cameraPermisionInformation, requestPermission] = useCameraPermissions();
     const [pickedImage, setPickedImage] = useState();
@@ -41,6 +41,7 @@ const ImagePicker = () => {
         });
 
         setPickedImage(image.uri);
+        onTakeImage(image.uri);
     }
 
     return(

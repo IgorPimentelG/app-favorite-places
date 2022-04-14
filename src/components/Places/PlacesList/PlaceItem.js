@@ -3,13 +3,11 @@ import { styles } from './styles';
 
 const PlaceItem = ({ place, onSelect }) => {
     return(
-        <Pressable onPress={onSelect}>
-            <View>
-                <Image source={{ uri: place.imageUri }}/>
-                <View>
-                    <Text>{place.title}</Text>
-                    <Text>{place.address}</Text>
-                </View>
+        <Pressable onPress={onSelect} style={({ pressed }) => [styles.item, pressed && styles.pressed]}>
+            <Image style={styles.image} source={{ uri: place.imageUri }}/>
+            <View styles={styles.info}>
+                <Text style={styles.title}>{place.title}</Text>
+                <Text style={styles.address}>{place.address}</Text>
             </View>
         </Pressable>
     );
