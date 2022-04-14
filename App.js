@@ -1,7 +1,7 @@
 import 'react-native-gesture-handler';
 import { StatusBar } from 'expo-status-bar';
 import Routes from './src/routes';
-import { init } from './src/util/database';
+import { init } from  './src/shared/services/database';
 import { useEffect, useState } from 'react';
 import AppLoading from 'expo-app-loading';
 

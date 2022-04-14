@@ -35,13 +35,15 @@ const PlaceForm = ({ onCreatePlace }) => {
 
     return(
        <ScrollView style={styles.form}>
-           <View>
-               <Text style={styles.label}> Title:</Text>
-               <TextInput style={styles.input}  onChangeText={changeTitleHandler} value={enteredTitle}/>
+           <View style={styles.container}>
+                <View>
+                    <Text style={styles.label}> Title:</Text>
+                    <TextInput style={styles.input}  onChangeText={changeTitleHandler} value={enteredTitle}/>
+                </View>
+                <ImagePicker onTakeImage={takeImageHandler}/>
+                <LocationPicker onPickLocation={pickLocationHandler}/>
+                <Button onPress={savePlaceHandler}>Add place</Button>
            </View>
-           <ImagePicker onTakeImage={takeImageHandler}/>
-           <LocationPicker onPickLocation={pickLocationHandler}/>
-           <Button onPress={savePlaceHandler}>Add place</Button>
        </ScrollView>
     );
 }

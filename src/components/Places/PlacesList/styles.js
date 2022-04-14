@@ -25,10 +25,10 @@ export const styles = StyleSheet.create({
         marginVertical: 12,
         backgroundColor: Colors.primary500,
         elevation: 2,
-        shadowColor: '#000',
+        shadowColor: 'black',
         shadowOpacity: 0.15,
         shadowOffset: { width: 1, height: 1 },
-        shadowRadius: 2,
+        shadowRadius: 2
     },
 
     pressed: {
@@ -39,8 +39,13 @@ export const styles = StyleSheet.create({
         flex: 1,
         borderBottomLeftRadius: 4,
         borderTopLeftRadius: 4,
-        height: 100,
-        
+        height: 100
+    },
+
+    containerImage: {
+        height: '100%',
+        width: 100,
+        marginRight: 6
     },
 
     info: {

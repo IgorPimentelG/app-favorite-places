@@ -2,8 +2,14 @@ import { StyleSheet } from 'react-native';
 import { Colors } from '../../constants/colors';
 
 export const styles = StyleSheet.create({
-    screen: {
-        alignItems: 'center'
+    fallback: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+
+    fallbackText: {
+        color: '#FFF'
     },
 
     image: {

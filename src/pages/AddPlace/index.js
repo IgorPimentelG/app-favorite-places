@@ -1,5 +1,5 @@
 import PlaceForm from "../../components/Places/PlaceForm";
-import { insertPlace } from "../../util/database";
+import { insertPlace } from '../../shared/services/database';
 
 const AddPlace = ({ navigation }) => {
 

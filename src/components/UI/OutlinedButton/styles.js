@@ -7,7 +7,6 @@ export const styles = StyleSheet.create({
         paddingHorizontal: 1,
         paddingVertical: 6,
         margin: 4,
-        padding: 6,
         justifyContent: 'center',
         alignItems: 'center',
         borderWidth: 1,
@@ -19,10 +18,12 @@ export const styles = StyleSheet.create({
     },
 
     icon: {
-        marginRight: 6
+        marginRight: 6,
+        marginLeft: 10
     },
 
     text: {
-        color: Colors.primary500
+        color: Colors.primary500,
+        marginRight: 10
     }
 });

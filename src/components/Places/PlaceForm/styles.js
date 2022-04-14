@@ -4,7 +4,11 @@ import { Colors } from '../../../constants/colors';
 export const styles = StyleSheet.create({
     form: {
         flex: 1,
-        padding: 24
+        padding: 24,
+    },
+
+    container: {
+        marginBottom: 50
     },
 
     label: {

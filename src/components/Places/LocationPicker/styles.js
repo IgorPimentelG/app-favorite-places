@@ -15,7 +15,8 @@ export const styles = StyleSheet.create({
     actions: {
         flexDirection: 'row',
         justifyContent: 'space-around',
-        alignItems: 'center'
+        alignItems: 'center',
+        marginBottom: 10
     },
 
     image: {
